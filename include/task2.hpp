@@ -1,9 +1,7 @@
-//
-// Created by ekaterina on 26.02.2022.
-//
+// Copyright 2021 Your Name <your_email>
 
-#ifndef INCLUDE_TASK2_HPP
-#define INCLUDE_TASK2_HPP
+#ifndef INCLUDE_TASK2_HPP_
+#define INCLUDE_TASK2_HPP_
 
 #include <utility>
 #include "Node.h"
@@ -12,7 +10,7 @@
 template <typename T>
 class Stack2 {
  protected:
-  Node<T>* head_stack= nullptr; //
+  Node<T>* head_stack = nullptr; //
  public:
   Stack2() = default;
   Stack2(const Stack2& s) = delete;       // некопируемый стек
@@ -62,7 +60,7 @@ class Stack2 {
 
   template <typename T>
   const T& Stack2<T>::head() const {
-    if (head_stack == nullptr) throw std::exception();;
+    if (head_stack == nullptr) throw std::exception();
     return head_stack->value;
   }
 
@@ -88,4 +86,4 @@ class Stack2 {
     }
     return s;
   }
-#endif  // INCLUDE_TASK2_HPP
+#endif  // INCLUDE_TASK2_HPP_

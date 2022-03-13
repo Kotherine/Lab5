@@ -50,7 +50,7 @@ class Stack1 {
 
   template <typename T>
   void Stack1<T>::pop() {
-    if (head_stack == nullptr) throw std::exception();;
+    if (head_stack == nullptr) throw std::exception();
     Node<T>* current_node = head_stack;
     head_stack = head_stack->p;
     delete current_node;
@@ -58,7 +58,7 @@ class Stack1 {
 
   template <typename T>
   const T& Stack1<T>::head() const {
-    if (head_stack == nullptr) throw std::exception();;
+    if (head_stack == nullptr) throw std::exception();
     return head_stack->value;
   }
 
